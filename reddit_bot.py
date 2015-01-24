@@ -25,7 +25,7 @@ phrase_dict = {
     ' Old timer\'s disease' : 'Alzheimer\'s Disease',
     ' I\'m giving you leadway' : 'I\'m giving you leeway',
     ' Expresso' : 'espresso',
-    ' Momento' : 'memento',
+    # Gets confused with spanish ' Momento' : 'memento',
     ' Irregardless' : 'regardless',
     ' Conversating' : 'conversing',
     ' Scotch free' : 'scot free',
@@ -90,7 +90,7 @@ def main():
                 for key in phrase_dict:
                     if (key.lower() in comment.body.lower() and
                             comment.id not in commented_list):
-                        reply_str = key+'?' + ' I think you meant:' \
+                        reply_str = key+'?' + ' I think you meant: ' \
                                 '\''+phrase_dict[key]+'.\''
                         comment.reply(reply_str)
                         print reply_str
