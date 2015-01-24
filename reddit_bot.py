@@ -13,25 +13,25 @@ import os
 
 
 phrase_dict = {
-    'Extract revenge' : 'exact revenge',
-    'Nip it in the butt' : 'nip it in the bud',
-    'I could care less' : 'I couldn\'t care less',
-    'One in the same' : 'one and the same',
-    'Each one worse than the next' : 'each one worse than the last',
-    'On accident' : 'by accident',
-    'Statue of limitations' : 'statute of limitations',
-    'For all intensive purposes' : 'for all intents and purposes',
-    'He did good' : 'he did well',
-    'Old timer\'s disease' : 'Alzheimer\'s Disease',
-    'I\'m giving you leadway' : 'I\'m giving you leeway',
-    'Expresso' : 'espresso',
-    'Momento' : 'memento',
-    'Irregardless' : 'regardless',
-    'Conversating' : 'conversing',
-    'Scotch free' : 'scot free',
-    'Curl up in the feeble position' : 'curl up in the fetal position',
-    'Hone in' : 'home in',
-    'Brother in laws' : 'brothers in law',
+    ' Extract revenge' : 'exact revenge',
+    ' Nip it in the butt' : 'nip it in the bud',
+    ' I could care less' : 'I couldn\'t care less',
+    ' One in the same' : 'one and the same',
+    ' Each one worse than the next' : 'each one worse than the last',
+    ' On accident' : 'by accident',
+    ' Statue of limitations' : 'statute of limitations',
+    ' For all intensive purposes' : 'for all intents and purposes',
+    ' He did good' : 'he did well',
+    ' Old timer\'s disease' : 'Alzheimer\'s Disease',
+    ' I\'m giving you leadway' : 'I\'m giving you leeway',
+    ' Expresso' : 'espresso',
+    ' Momento' : 'memento',
+    ' Irregardless' : 'regardless',
+    ' Conversating' : 'conversing',
+    ' Scotch free' : 'scot free',
+    ' Curl up in the feeble position' : 'curl up in the fetal position',
+    ' Hone in' : 'home in',
+    ' Brother in laws' : 'brothers in law',
 }
 
 
@@ -65,7 +65,7 @@ def main():
     r.login('', '')
     
     # Touch file to make sure it exists, then read commented_list from
-    # commented_list.csv to restore commenting history after a crash.
+    # commented_list.csv to restore commenting history after a restart.
     touch('commented_list.csv')
     commented_list = read_list('commented_list.csv')
     
